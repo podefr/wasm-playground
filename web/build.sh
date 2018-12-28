@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build . -t wasm-web
+docker build --no-cache . -t wasm-web

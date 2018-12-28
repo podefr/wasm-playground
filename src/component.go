@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import "syscall/js"
 
 func main() {
-    fmt.Println("Hello World")
+    var doc = js.Global().Get("document")
+    var body = doc.Get("body")
+    body.Set("innerHTML", "Hello World")
 }
