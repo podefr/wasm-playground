@@ -1,0 +1,1 @@
+docker run -e GOOS=js -e GOARCH=wasm --mount src=`pwd`,target=/mnt,type=bind wasm-go go build -o ./web/main.wasm ./src/component.go
